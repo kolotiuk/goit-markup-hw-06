@@ -298,6 +298,7 @@ ul {
     position: relative;
 }
 .modal .input {
+    height: 40px;
     width: 100%;
     padding: 12px 35px;
 
@@ -332,6 +333,7 @@ ul {
 .checkbox-field {
     position: relative;
     display: flex;
+    justify-content: center;
     align-items: center;
     margin-bottom: 30px;
 }
@@ -366,6 +368,7 @@ ul {
 }
 
 .checkbox-label {
+    color: var(--primary-text-color);
     font-size: 14px;
     line-height: 1.71;
 }
@@ -756,6 +759,7 @@ ul {
     height: 50px;
     padding: 15px 0 15px 16px;
 
+    color: var(--primary-white-color);
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
