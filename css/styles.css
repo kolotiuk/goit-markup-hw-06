@@ -2,7 +2,7 @@
     --primary-title-color: #212121;
     --primary-text-color: #757575;
     --blue-color: #2196f3;
-    --blue-color-hover: #188CE8;
+    --blue-color-hover: #188ce8;
     --primary-white-color: #ffffff;
     --bg-color: #2f303a;
     --secondary-bg-color: #f5f4fa;
@@ -55,7 +55,7 @@ ul {
 }
 
 .container {
-    width: 1230px;
+    width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
 }
@@ -184,7 +184,9 @@ ul {
 
 /* Hero */
 .hero {
+    margin: 0 auto;
     padding: 200px 0;
+    max-width: 1600px;
     height: 600px;
     text-align: center;
 
@@ -261,7 +263,8 @@ ul {
 
     transition: fill 250ms var(--cubic-bezier);
 }
-.close-btn:hover {
+.close-btn:hover,
+.close-btn:focus {
     fill: var(--blue-color);
 }
 .modal-title {
@@ -371,19 +374,21 @@ ul {
     text-decoration: underline;
 }
 
-
 /* Features */
 .features-list {
     display: flex;
     flex-wrap: wrap;
-    margin: -20px;
+    margin: -15px;
 }
 .features-item {
     width: 270px;
-    margin: 20px;
+    margin: 15px;
 }
 .features-icon {
-    padding: 25px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
     margin-bottom: 30px;
 
     background-color: var(--secondary-bg-color);
@@ -406,7 +411,7 @@ ul {
 
     font-size: 36px;
     font-weight: 700;
-    line-height: 1.66;
+    line-height: 1.16;
     text-align: center;
 }
 
@@ -521,7 +526,8 @@ ul {
 .clients-item {
     margin: 15px;
 }
-.clients-logo .link {
+.clients-item-link {
+    display: flex;
     align-items: center;
     justify-content: center;
     width: 170px;
@@ -531,21 +537,21 @@ ul {
     border: 1px solid var(--grey-icon-color);
     border-radius: 4px;
 }
-.clients-logo .link .icon {
+.clients-item-link .icon {
     transition: fill 250ms var(--cubic-bezier);
 }
-.clients-logo .link {
+.clients-item-link {
     transition: border-color 250ms var(--cubic-bezier);
 }
-.clients-logo .link:hover,
-.clients-logo .link:focus {
+.clients-item-link:hover,
+.clients-item-link:focus {
     border-color: var(--blue-color);
 }
 .clients-item .icon {
     fill: currentColor;
 }
-.clients-logo .link:hover .icon,
-.clients-logo .link:focus .icon {
+.clients-item-link:hover .icon,
+.clients-item-link:focus .icon {
     fill: var(--blue-color);
 }
 
@@ -553,11 +559,11 @@ ul {
 .filter {
     display: flex;
     justify-content: center;
-    margin: -8px;
+    margin: -4px;
     margin-bottom: 50px;
 }
 .filter-btn {
-    margin: 8px;
+    margin: 4px;
     padding: 6px 22px;
     border: 1px solid transparent;
     border-radius: 4px;
